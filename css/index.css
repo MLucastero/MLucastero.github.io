@@ -1,0 +1,73 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@500&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.main-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  margin: 30px;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    transition: ease .2s;
+}
+a:visited {
+    color: blue;
+}
+h1 {
+  font-family: "Roboto", cursive;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: white;
+  position: relative;
+  animation-name: run;
+  animation-duration: 3s;
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 300;
+}
+.container {
+  align-self: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes run {
+  0% {
+    top: 0;
+    color: red;
+  }
+  50% {
+    color: green;
+    top: 100%;
+  }
+  100% {
+    color: blue;
+    top: 0;    
+  }
+}
