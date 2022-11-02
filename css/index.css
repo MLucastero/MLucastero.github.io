@@ -54,7 +54,7 @@ h1:before{
   margin-bottom: 50px;
   color: white;
   z-index: -1;
-  animation: glitch 2.25s linear infinite;
+  animation: glitch 3s linear infinite;
 }
 
 @keyframes glitch {
@@ -112,9 +112,11 @@ h1:before{
   }
   90% {
     content: 'The Backrooms is an urban legend and creepypasta describing an endless maze of randomly generated office rooms and other environments. It is characterized by the smell of moist carpet, walls with a monochromatic tone of yellow, and buzzing fluorescent lights. Internet users have expanded upon this concept by creating different "levels" of the Backrooms and "entities" which inhabit them.';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: yellow;
   }
   100% {
+    content: 'thanhhafmcvn';
     text-decoration-line: underline overline;
     text-decoration-style: wavy;
     font-family: "Wingdings";
