@@ -30,11 +30,12 @@ img {
   height: 300px;
   border-radius: 100%;
 }
-a {
+ a {
   margin-top: 30px;
   text-decoration: none;
 }
-a:hover {
+ a:hover {
+  font-size: 2rem;
   color: black;
   background-color: white;
   padding: 15px;
@@ -47,17 +48,24 @@ a:hover {
 a:visited {
     color: blue;
 }
+h3 > a {
+  text-decoration: none;
+  font-family: monospace;
+}
+h3 > a:hover {
+  background-color: rgb(81, 80, 80);
+  color: yellow;
+}
 h1:before{
   content:'thanhhafmcvn';
   font-family: "Roboto", cursive;
   font-weight: 500;
   margin-bottom: 50px;
   color: white;
-  z-index: -1;
-  animation: glitch 3s linear infinite;
+  animation: show-text 2s linear infinite;
 }
 
-@keyframes glitch {
+@keyframes show-text {
   0% {
     content: 'World Trade Center 9/11/2001';
     text-transform: uppercase;
@@ -94,24 +102,29 @@ h1:before{
     color: green;
   }
   60% {
-    font-size: 5px;
-    content:'Ab Juli 1921 Vorsitzender der Nationalsozialistischen Deutschen Arbeiterpartei (NSDAP), versuchte er im November 1923 mit einem Putsch von München aus die Weimarer Republik zu stürzen. Mit seiner Schrift Mein Kampf (1925/26) prägte er die antisemitische und rassistische Ideologie des Nationalsozialismus';
+    font-size: 7px;
+    content:'Ab Juli 1921 Vorsitzender der Nationalsozialistischen Deutschen Arbeiterpartei (NSDAP), versuchte er im November 1923 mit einem Putsch von München aus die Weimarer Republik zu stürzen. ';
+    text-decoration: none;
     text-decoration: italic;
     color: #20C20E;
   }
   70% {
     font-size: 5px;
     content: '六四事件，又稱八九民运、八九学运、1989年春夏之交的政治风波，广义上指1989年4月中旬开始的以悼念胡耀邦活动为导火索、由中国大陆高校学生在北京市天安门广场发起、持续近两个月的全境示威运动[8][9][10]。狹義上指六四清場，即1989年6月3日晚間至6月4日凌晨，中国人民解放军、武装警察部队和人民警察在北京天安門廣場对示威集会进行的武力清场行动';
+    text-decoration: none;
     font-family: 'Noto Serif SC', serif;
     color: #20C20E
   }
   80% {
-    content: 'أسامة بن لادن (10 مارس 1957 – 2 مايو 2011) مؤسس تنظيم القاعدة وزعيمه السابق؛ وهو تنظيم سلفي جهادي مسلح أُنشئ في أفغانستان سنة 1988. قام تنظيم القاعدة في إطار حربه على من يصفهم باليهود والصليبين بالهجوم على أهداف مدنية وعسكرية في العديد من البلدان أبرزها هجمات 11 سبتمبر وتفجيرات لندن 7 يوليو 2005 وتفجيرات مدريد 2004، أعلن بالاشتراك مع أيمن الظواهري عام 1998م تأسيس الجبهة العالمية للجهاد ضد اليهود والصليبين، والتي نجم عنها لاحقًا ما يسمى الحرب على الإرهاب.';
+    content: 'أسامة بن لادن (10 مارس 1957 – 2 مايو 2011) مؤسس تنظيم القاعدة وزعيمه السابق؛ وهو تنظيم سلفي جهادي مسلح أُنشئ في أفغانستان سنة 1988. والتي نجم عنها لاحقًا ما يسمى الحرب على الإرهاب.';
+    text-decoration: none;
     font-family: 'Noto Sans Arabic', sans-serif;
     color: red;
   }
   90% {
+    font-size: 5px;
     content: 'The Backrooms is an urban legend and creepypasta describing an endless maze of randomly generated office rooms and other environments. It is characterized by the smell of moist carpet, walls with a monochromatic tone of yellow, and buzzing fluorescent lights. Internet users have expanded upon this concept by creating different "levels" of the Backrooms and "entities" which inhabit them.';
+    text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: yellow;
   }
@@ -127,4 +140,3 @@ h2 {
   font-family: "Comfortaa", cursive;
   font-weight: 300;
 }
-
