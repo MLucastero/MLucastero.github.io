@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 html,
 body {
   width: 100%;
@@ -24,119 +24,53 @@ body {
   justify-content: center;
   align-items: center;
 }
-img {
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-}
- a {
-  margin-top: 30px;
-  text-decoration: none;
-}
- a:hover {
-  font-size: 2rem;
-  color: black;
-  background-color: white;
-  padding: 15px;
-  border-radius: 25px;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-    transition: ease .2s;
-}
-a:visited {
-    color: blue;
-}
-h3 > a {
-  text-decoration: none;
-  font-family: monospace;
-}
-h3 > a:hover {
-  background-color: rgb(81, 80, 80);
-  color: yellow;
-}
-h1:before{
-  content:'thanhhafmcvn';
-  font-family: "Roboto", cursive;
-  font-weight: 500;
-  margin-bottom: 50px;
+a {
+  margin-right: 30px;
+  margin-left: 30px;
   color: white;
-  animation: show-text 2s linear infinite;
+}
+.nav-bar {
+  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.quote-block {
+  color: white;
+  width: 70vw;
+  height: 70vh;
+}
+#quote-content {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  animation: fadeIn 5s;
+}
+#quote-credit {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 100px;
+  opacity: 0;
+}
+.menu {
+  font-size: 30px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-block {
+  z-index: 999;
+  position: sticky;
+  bottom: 0;
 }
 
-@keyframes show-text {
-  0% {
-    content: 'World Trade Center 9/11/2001';
-    text-transform: uppercase;
-    color: red;
-  }
-  10% {
-    content: 'Tiananmen Square 1989';
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: line-through;
-    color: orange;
-  }
-  20% {
-    content:'Quandale Dingle';
-    text-decoration: wavy;
-    color:  #45ff42;
-    font-family: "Impact", sans-serif;
-  }
-  30% {
-    content:'Khmer Rouge Pol Pot';
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
-    color: yellow;
-  }
-  40% {
-    content:'我爱北京天安门广场，1989年什么都没发生。习近平和毛泽东是伟大的领导人，他们带领我们走出了灾难。';
-    font-family: 'Noto Serif SC', serif;
-    color: skyblue;
-  }
-  50% {
-    font-size: 40px;
-    content:'34° 10′ 9″ N, 73° 14′ 33″ E';
-    font-family: "Courier New", monospace;
-    text-decoration: dashed;
-    color: green;
-  }
-  60% {
-    font-size: 7px;
-    content:'Ab Juli 1921 Vorsitzender der Nationalsozialistischen Deutschen Arbeiterpartei (NSDAP), versuchte er im November 1923 mit einem Putsch von München aus die Weimarer Republik zu stürzen. ';
-    text-decoration: none;
-    text-decoration: italic;
-    color: #20C20E;
-  }
-  70% {
-    font-size: 5px;
-    content: '六四事件，又稱八九民运、八九学运、1989年春夏之交的政治风波，广义上指1989年4月中旬开始的以悼念胡耀邦活动为导火索、由中国大陆高校学生在北京市天安门广场发起、持续近两个月的全境示威运动[8][9][10]。狹義上指六四清場，即1989年6月3日晚間至6月4日凌晨，中国人民解放军、武装警察部队和人民警察在北京天安門廣場对示威集会进行的武力清场行动';
-    text-decoration: none;
-    font-family: 'Noto Serif SC', serif;
-    color: #20C20E
-  }
-  80% {
-    content: 'أسامة بن لادن (10 مارس 1957 – 2 مايو 2011) مؤسس تنظيم القاعدة وزعيمه السابق؛ وهو تنظيم سلفي جهادي مسلح أُنشئ في أفغانستان سنة 1988. والتي نجم عنها لاحقًا ما يسمى الحرب على الإرهاب.';
-    text-decoration: none;
-    font-family: 'Noto Sans Arabic', sans-serif;
-    color: red;
-  }
-  90% {
-    font-size: 5px;
-    content: 'The Backrooms is an urban legend and creepypasta describing an endless maze of randomly generated office rooms and other environments. It is characterized by the smell of moist carpet, walls with a monochromatic tone of yellow, and buzzing fluorescent lights. Internet users have expanded upon this concept by creating different "levels" of the Backrooms and "entities" which inhabit them.';
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: yellow;
-  }
-  100% {
-    content: 'thanhhafmcvn';
-    text-decoration-line: underline overline;
-    text-decoration-style: wavy;
-    font-family: "Wingdings";
-    color: blue;  
-  }
-}
-h2 {
-  font-family: "Comfortaa", cursive;
-  font-weight: 300;
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
